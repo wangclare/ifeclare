@@ -1,0 +1,539 @@
+*{
+  margin:0;
+  padding:0;    
+}
+#header{
+  padding:5px;
+  overflow:hidden;
+  min-width:1280px;
+}
+#header .book{
+  margin-left:10%;		
+  width:35px;
+  vertical-align:middle;		
+}
+#header strong{
+  font-size:25px;
+  color:#717171;
+  padding:10px;
+  vertical-align:middle;
+}
+#header .item{
+  font-size:20px;		
+  float:right;
+  list-style:none;
+  margin-right:10%;
+}
+.item li{
+ padding:10px;
+ color:#a3a4a9;
+ display:inline-block;		
+}
+.item .underline{
+  color:#ea6f6e;
+  border-bottom:2px solid #e74f4d;
+}
+#header .item li:hover{
+  color:#ea6f6e;
+  border-bottom:2px solid #e74f4d;
+}
+#header #log{
+  color:#ea6f6e;
+  cursor:pointer;
+}
+#header #log:hover{
+  border:none;
+}
+#new_life{
+ color:white; /*为什么这里设置对button的字体颜色不起作用*/ 
+ position:relative; 	     
+ min-width:1280px;
+}
+#new_life .train{
+ width:100%;
+}
+#new_life h1{
+ position:absolute;
+ top:270px;
+ left:150px;
+ font-size:55px;
+}
+#new_life .enjoy{
+ position:absolute;
+ top:370px;
+ left:150px;
+ line-height:1.5em;/*line-height具体用法*/
+}
+.new_life_button{
+ position:absolute;
+ top:500px;
+ left:150px;
+ font-size:20px;
+ border:none;
+ padding:10px 50px;
+ background:#e74f4d;
+ color:white;
+ cursor:pointer;
+}
+.new_life_footer{  	
+  background:white;
+  margin-top:-140px;
+  width:100%;
+  text-align:center;
+  position:relative;/*为了实现定位在图片上方,且不脱离文档流*/
+}
+.new_life_footer div{
+  display:inline-block;
+  width:21%;
+  color:#ccc;   
+  padding:60px 20px;
+}
+.new_life_footer img{
+  padding-bottom:20px;
+}
+.new_life_footer p{
+  line-height:1.5em;
+  border-right:2px solid #ccc;
+  padding-bottom:10px;
+}
+.square p{
+  border:none;
+}
+#do_not_know{  
+  text-align:center;
+  color:#a1a1a1;    
+  padding:80px 0;
+  background:#edecec;
+  min-width:1280px;
+  margin-top:3px;/*后面需要删除*/
+}
+#do_not_know img{
+  width:80px;
+}
+#do_not_know h1{
+  padding-top:30px;
+}
+#new_event{
+  color:white;
+  text-align:center;
+  position:relative;
+  min-width:1280px;
+}
+
+#new_event img{
+  width:100%;
+}
+.message{
+  position:absolute;
+  width:600px;
+  top:50px;
+  text-align:center;
+  left:50%;
+  margin-left:-300px;
+  line-height:1.5em;
+}
+.message hr{
+  border:none;
+  height:4px;
+  background:white;
+  width:6%;
+  display:inline-block;
+}
+/*这里关于hr的样式设置是参照chrome调试查看的结果进行更改的,hr设置样式存在问题*/
+.message p{
+  padding-top:30px;
+}
+.form{
+  position:absolute;
+  width:100%;
+  top:200px;
+}
+#search_event select
+{
+  border:none;  
+  width:15%;
+  height:30px;
+  padding:5px 0;/*在IE8下文字靠底部对齐的,这里设置使文字效果往上一些,视觉效果好，其他浏览器默认都是垂直居中*/
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance:none;
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+  /*消除圆角*/
+  border-radius:0px;
+  text-indent:5px;
+  background:url(images/select.png) no-repeat right white;
+  margin-right:10px;
+  color:#ccc;
+  vertical-align:middle;/*保证任何浏览器下都是在同一水平线上,主要问题是IE8下比较明显*/
+
+}
+select::-ms-expand { display: none; }/*消除IE下的默认样式*/
+#search_event button{
+  border:none;  
+  width:15%;
+  height:30px;
+  background:#be4e48;
+  cursor:pointer;
+  color:white;
+  letter-spacing:1em;
+  vertical-align:middle;/*保证任何浏览器下都是在同一水平线上,主要问题是IE8下比较明显*/
+}
+.city_event{
+  text-align:center;
+  padding:60px 10px;
+  line-height:2em;
+}
+.city_event p{
+ color:#9fa0a0;
+}
+.city_event h3{
+  color:#323333;
+}
+.city_event h2{
+  color:#323333;
+}
+.city_event div{
+  display:inline-block;
+  width:13%;
+  margin-left:80px;
+}
+.city_event img{
+  border:1px solid #ccc;
+  padding:5px;
+  margin-left:-5px;
+}
+.show_2 h2{
+  letter-spacing:0.5em;
+  padding-left:10px;
+}
+#beijing_event{
+  overflow:hidden;
+  min-width:1280px;
+}
+.beijing_shoes{
+  width:66%;
+  color:white;
+  position:relative;
+  text-align:center;
+  float:left;
+  background:#ccc;
+}
+.beijing_shoes img{
+  width:100%;
+}
+.beijing_head{
+  position:absolute;
+  width:500px;
+  top:150px;
+  left:50%;
+  margin-left:-250px;
+}
+.beijing_head h2{
+  font-size:50px;
+}
+.beijing_head h1{
+  font-size:200px;
+}
+.beijing_head h3{
+  font-size:20px;
+  line-height:1.5em;
+}
+.beijing_head span{
+  margin-left:-1.5em;
+}
+.beijing_shoes .left{
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:50%;
+  margin-top:-15px;
+  right:0; 
+}
+.beijing_info{  
+  float:right;
+  text-align:center;
+width:34%;/*父容器min-width:1280px,左右满足2:1所以左边为66%，右边为34%，页面即可自适应布局，这
+样左边最少为844.8，右边为435.2，这样整个页面在大于1280px会缩放并且能够占满整个窗口，但是当到达或者小于
+1280后即可卷起*/;
+}
+.beijing_shoes_info{
+ width:300px;
+ line-height:1.5em;
+ margin:200px auto 0;
+
+}
+.beijing_shoes_info .slash{
+  color:#929292;
+}
+.beijing_shoes_info .number{
+  color:#e74f4d;
+}
+.beijing_shoes_info .info{
+  text-align:justify;
+  color:#c3c3c3;
+  margin-top:20px;
+}
+.beijing_shoes_info button{
+  border:none;
+  border:1px solid #e74f4d;
+  width:100px;
+  background:white;
+  padding:5px;
+  margin-top:30px;
+  color:#e74f4d;
+}
+.beijing_shoes_info .hover{
+  color:#929292;
+  margin-top:10px;
+}
+
+.hover i{
+  padding:0 5px;/*两边都需要设置，否则可能显示的不居中了*/
+}
+#new_us{
+  min-width:1280px;
+  overflow:hidden;
+}
+.new_us_left{
+  float:left;
+  width:33%;
+  background:#e8504e;
+  text-align:center;
+  padding-bottom:3000px;
+  margin-bottom:-3000px;
+  line-height:2em;
+  color:white;
+}
+.new_us_left .left_top{
+  margin-top:200px;
+}
+.new_us_left hr{
+  border:none;
+  height:4px;
+  background:white;
+  width:6%;
+  display:inline-block;
+}
+.new_us_left button{
+  border:none;
+  width:150px;
+  color:white;
+  background:transparent;
+  border:1px solid white;
+  padding:10px 0;
+  margin-top:30px;
+  font-size:20px;
+}
+.new_us_middle{
+  float:left;
+  width:33%;
+  text-align:center;
+  padding-bottom:3000px;
+  margin-bottom:-3000px;
+  line-height:2em;
+  color:#323333;
+}
+.new_us_middle .middle_top{
+  margin-top:200px;
+}
+.new_us_middle hr{
+  border:none;
+  height:4px;
+  background:#aaaaaa;
+  width:6%;
+  display:inline-block;  
+}
+.new_us_middle button{
+  border:none;
+  width:150px;
+  color:#e8504e;
+  background:transparent;
+  border:1px solid #e8504e;
+  padding:10px 0;
+  margin-top:30px;
+  font-size:20px;
+}
+.new_us_right{
+  float:right;
+  width:34%;
+  position:relative;
+}
+/*这三列里面最右边是最高的，所以对左边两列使用等高布局即可实现三列等高，对右边那个主要还是因为会影响右箭头的
+垂直居中对齐*/
+.new_us_right .girl{
+  width:100%;
+}
+.new_us_right .right{
+  width:30px;
+  height:30px;
+  position:absolute;
+  top:50%;
+  margin-top:-15px;
+  left:0; 
+} 
+.to_be_us{
+  min-width:1280px;
+  margin-top:100px;
+  margin-bottom:100px;
+  text-align:center;
+  line-height:1.5em;
+}
+.to_be_us hr{
+  border:none;
+  height:3px;
+  background:#e7504d;
+  width:3%;
+  display:inline-block;
+}
+.to_be_us p{
+  color:#aaaaaa;
+}
+#volunteer{
+  min-width:1280px;
+  text-align:center;
+}
+.volunteer_intro{
+ text-align:left;
+ width:300px;
+ display:inline-block;
+ line-height:1.5em;
+ list-style:none;
+ vertical-align:bottom;
+}
+.volunteer_intro .assignment,.volunteer_intro .rights{
+  margin-bottom:16px;
+}
+.volunteer_intro p{
+ color:#a5a3a2;
+ font-size:15px;
+}
+.volunteer_intro a{
+  margin-left:240px;
+  text-decoration:none;
+  color:#a5a3a2;
+  font-size:15px;
+}
+#apply_volunteer{
+ width:600px;
+ display:inline-block;
+ margin-left:50px;
+}
+#apply_volunteer input{
+  width:49%;
+  height:60px;
+  line-height:60px;/*单行文本在父元素里居中对齐，使line-height和height高度一致即可*/
+  background:#ededef;
+  border:none;
+  text-indent:1em;
+  color:#a5a3a2;
+}
+#volunteer .left_top,#volunteer .left_bottom{
+  float:left;
+  margin-right:10px;
+}
+#volunteer .right_top,#volunteer .right_bottom{
+  float:right;
+}
+#volunteer .left_bottom,#volunteer .right_bottom{
+  margin-top:10px;
+}
+#apply_volunteer textarea{
+  width:100%;
+  background:#ededef;
+  height:110px;
+  border:none;
+  margin-top:10px;
+  text-align:left;
+  color:#a5a3a2;
+  padding:5px 0;
+  resize:none;
+  overflow:hidden;
+  text-indent:1em;
+
+}
+#apply_volunteer button{
+  width:100%;
+  background:#ededef;
+  border:none;
+  height:50px;
+  margin-top:10px;
+}
+#connect_us{
+ min-width:1280px;
+ text-align:center;
+ color:white;
+ background:#33363f;
+ padding:70px 0;
+ height:200px;
+ margin-top:100px;
+ line-height:2em;
+ 
+}
+#connect_us p{
+  font-size:15px;
+}
+.my_email{
+  border:none;
+  width:400px;
+  height:40px;
+  line-height:40px;/*单行文本在父元素里居中对齐，使line-height和height高度一致即可*/
+  margin-top:20px;
+  color:#b7b7b7;
+  font-size:15px;
+  text-indent:1em;
+  vertical-align:middle;/*保证任何浏览器下都是在同一水平线上*/
+}
+.email{
+  width:60px;
+  background:#707278;
+  border:none;
+  height:40px;
+  margin-top:20px;
+  font-size:15px;
+  margin-left:-3px;
+  cursor:pointer;
+  vertical-align:middle;
+}
+#connect_us a{
+  text-decoration:none; /*保证任何浏览器下都是在同一水平线上*/
+  
+}
+#connect_us i{
+  margin-top:20px;
+  color:white;
+  font-size:25px;
+  margin-left:10px; 
+}
+#footer{
+  min-width:1280px;
+  height:80px;
+  color:white;
+  background:#303039;
+  position:relative;/*
+  line-height:80px;
+  overflow:hidden;*/
+}
+#footer span{
+ left:50px;
+ position:absolute;
+ top:50%;
+}
+#footer a{
+  text-decoration:none;
+  color:white;
+  position:absolute;
+  top:50%;
+  right:50px;
+  /*被注释掉的是让元素垂直居中的方法*/
+ }/*
+ #footer span{
+  float:left;
+  margin-left:50px;
+ }
+ #footer a{
+  float:right;
+  margin-right:50px;
+  text-decoration:none;
+  color:white;
+  }*/
