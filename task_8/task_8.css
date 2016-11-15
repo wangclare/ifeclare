@@ -84,7 +84,7 @@
         border:1px solid #999;      
         margin-right:20px;
         width: calc(50% - 20px);
-        /*当margin-right为0时，即可按照官网上的成为1列，但是设置margin后，并且元素width均为100%/3,最右边的元素会撑破布局，掉到下一行，此时就应该使被撑开的部分在width上还原，所以calc()里-的数字和margin-right设为一样即可抵消*/
+        
     }
     .top div:nth-child(2){
         height:50px;
@@ -92,7 +92,7 @@
         border:1px solid #999;      
         margin-right:20px;
         width: calc(50% - 20px);
-        /*当margin-right为0时，即可按照官网上的成为1列，但是设置margin后，并且元素width均为100%/3,最右边的元素会撑破布局，掉到下一行，此时就应该使被撑开的部分在width上还原，所以calc()里-的数字和margin-right设为一样即可抵消*/
+        
     }
     .top div:last-child{
      height:50px;
