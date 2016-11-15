@@ -1,0 +1,163 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+.container-fluid{
+    border:1px solid #999;
+    padding-bottom:20px;
+}
+.row{    
+    padding:20px 0 0 20px;
+}
+@media screen and (min-width:768px){
+    .top div{
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(100%/3 - 20px);
+        /*当margin-right为0时，即可按照官网上的成为1列，但是设置margin后，并且元素width均为100%/3,最右边的元素会撑破布局，掉到下一行，此时就应该使被撑开的部分在width上还原，所以calc()里-的数字和margin-right设为一样即可抵消*/
+    }
+    .middle div:nth-child(1){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(25% - 20px);
+    }
+    .middle div:nth-child(2){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(50% - 20px);
+    }
+    .middle div:last-child{
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(25% - 20px);
+    }
+    .bottom div:nth-child(1){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(100%/12 - 20px);
+    }
+    .bottom div:nth-child(2){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(100%/12 - 20px);
+    }
+    .bottom div:nth-child(3){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(100%/12*2 - 20px);
+    }
+    .bottom div:nth-child(4){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(100%/12*2 - 20px);
+    }
+    .bottom div:last-child{
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(100%/12*6 - 20px);
+    }    
+    
+}
+@media screen and (max-width:768px){
+    .top div:nth-child(1){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(50% - 20px);
+        /*当margin-right为0时，即可按照官网上的成为1列，但是设置margin后，并且元素width均为100%/3,最右边的元素会撑破布局，掉到下一行，此时就应该使被撑开的部分在width上还原，所以calc()里-的数字和margin-right设为一样即可抵消*/
+    }
+    .top div:nth-child(2){
+        height:50px;
+        background:#eee;
+        border:1px solid #999;      
+        margin-right:20px;
+        width: calc(50% - 20px);
+        /*当margin-right为0时，即可按照官网上的成为1列，但是设置margin后，并且元素width均为100%/3,最右边的元素会撑破布局，掉到下一行，此时就应该使被撑开的部分在width上还原，所以calc()里-的数字和margin-right设为一样即可抵消*/
+    }
+    .top div:last-child{
+     height:50px;
+     background:#eee;
+     border:1px solid #999; 
+     margin-right:20px;
+     margin-top:20px;
+     width:calc(100% - 20px);
+ }
+ .middle div:nth-child(1){
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    width: calc(25% - 20px);
+}
+.middle div:nth-child(2){
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    width: calc(50% - 20px);
+}
+.middle div:last-child{
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    width: calc(25% - 20px);
+}
+.bottom div:nth-child(1){
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    width: calc(100%/12*2 - 20px);
+}
+.bottom div:nth-child(2){
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    width: calc(100%/12*2 - 20px);
+}
+.bottom div:nth-child(3){
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    width: calc(100%/12*8 - 20px);
+}
+.bottom div:nth-child(4){
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    margin-top:20px;
+    width: calc(100%/12*3 - 20px);
+}
+.bottom div:last-child{
+    height:50px;
+    background:#eee;
+    border:1px solid #999;      
+    margin-right:20px;
+    margin-top:20px;
+    width: calc(100%/12*3 - 20px);
+}    
+} 
